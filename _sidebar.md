@@ -1,2 +1,2 @@
 - [第一章、预备知识](notes/chapter_1_preliminaries.md)
-  - [1.1 一些数学的符号跟定义](notes/1_1_notation_and_terminology.md)
+  - [1.1 一些数学的符号跟定义](notes/s1_1_notation_and_terminology.md)
