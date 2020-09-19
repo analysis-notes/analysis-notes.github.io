@@ -84,6 +84,7 @@ $ B(x,r)=\\{y \in X: d(x,y) < r\\} $ <br>
 证： 见 14.5 节 Lemma 14.32 (1) 的证明。
 
 最后，写一个Stone-Weierstrass定理应用于度量空间的结论。这个略有提前，Stone-Weierstrass定理会在拓扑章节详细证明，但是在此之前就会用到它（讲傅立叶变换的时候），所以这边先写一下，也暂时不证了。
+
 **Theorem 1.25** 令 $X$ 是一个紧致的度量空间, $\mathcal A$ 是一个由 $X$ 上连续复值函数组成的集合，并且有以下性质： <br>
 (1) 若 $f,g \in \mathcal A$，且 $c \in \mathbb C$，那么 $f+g, fg, cf \in \mathcal A$ <br>
 (2) 若 $f \in \mathcal A$，那么 $\bar f \in \mathcal A$  <br>
