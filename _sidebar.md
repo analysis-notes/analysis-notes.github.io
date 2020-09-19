@@ -1,2 +1,3 @@
 - [第一章、预备知识](notes/chapter_1_preliminaries.md)
   - [1.1 一些数学的符号跟定义](notes/s1_1_notation_and_terminology.md)
+  - [1.2 数学分析中的基础定义及定理](notes/s_1_2_baics_of_math_analysis.md)
