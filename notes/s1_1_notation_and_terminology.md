@@ -33,6 +33,6 @@ $x \vee y = \max(x,y) , x\wedge y = \min(x,y) $
 
 若 $f$ 的定义域为实数，或者实数的某个子集，那么 $f(x^+)=\lim_{y \rightarrow x^+} f(y),~ f(x^-)=\lim_{y\rightarrow x^-}f(y)$ 分别称为 $f$ 在 $x$ 处的右极限 (right limit)跟左极限 (left limit)
 
-增函数 (increasing): $f: \mathbb R \rightarrow \mathbb R$，若 $x <y$， 那么 $f(x) \le f(y)$
+增函数 (increasing): $f: \mathbb R \rightarrow \mathbb R$
 
 
