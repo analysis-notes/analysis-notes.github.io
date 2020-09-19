@@ -22,7 +22,7 @@ $ B(x,r)=\\{y \in X: d(x,y) < r\\} $ <br>
 **Definition 1.7** 称 $f: \mathbb R \mapsto \mathbb R$ 在 $x$ 处连续 (continuous)，若 $\forall \epsilon > 0, \exists \delta >0; s.t. \forall d(x,y) < \delta, |f(x) - f(y)| < \epsilon$  <br>
 称 $f$ 是连续函数，如果 $f$ 在其定义域内每一点连续 <br>
 一个关于连续的性质：开集的 $f$ 逆也是一个开集 <br>
->* 注：我们后面会看到这一性质把连续映射的定义推广到了更一般的拓扑空间 <br>
+> 注：我们后面会看到这一性质把连续映射的定义推广到了更一般的拓扑空间 <br>
 
 **Definition 1.8** 称 $f:\mathbb R \mapsto \mathbb R$ 在点 $x$ 处上半连续 (upper semicontinuous), 当且仅当 $f(x) \ge \limsup_{y \to x}f(y)$; 称其在点 $x$ 处下半连续 (lower semicontinuous), 当且仅当 $f(x) \le \liminf_{y \to x}f(y)$；称其是上半/下半连续的，当且仅当其在定义域中每一点都是上半/下半连续的；称其是半连续的 (semicontinuous), 当且仅当在定义域内几乎处处连续，且在不连续点处为上半连续或下半连续的 <br>
 > 注：半连续是比连续更弱的一个概念。直觉上理解，半连续是指函数在点 $x$ 附近的值没有比 $f(x)$ 高出太多或低出太多；上/下半连续要么是连续的，要么是往上/下跳跃 <br>
