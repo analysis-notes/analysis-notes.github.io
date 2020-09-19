@@ -33,6 +33,34 @@ $x \vee y = \max(x,y) , x\wedge y = \min(x,y) $
 
 若 $f$ 的定义域为实数，或者实数的某个子集，那么 $f(x^+)=\lim_{y \rightarrow x^+} f(y),~ f(x^-)=\lim_{y\rightarrow x^-}f(y)$ 分别称为 $f$ 在 $x$ 处的右极限 (right limit)跟左极限 (left limit)
 
-增函数 (increasing): 
+增函数 (increasing): $f: \mathbb R \rightarrow \mathbb R$，若 $x <y$ ， 那么 $f(x) \le f(y) $
+
+严格增函数 (strict increasing): $f: \mathbb R \rightarrow \mathbb R$ ，若 $x < y$ ，那么 $f(x) < f(y) $
+
+类似可定义减函数 (decreasing), 严格减函数 (strict decreasing)
+
+增函数跟减函数统称为单调函数
+
+给定一个实数序列 $\{a_n\}$ :
+
+ $\limsup_{n\rightarrow \infty} a_n=\inf_n \sup _{m\ge n} a_m$,
+ 
+ $\liminf_{n\rightarrow \infty} a_n=\sup_n \inf _{m\ge n} a_m$
+ 
+举个例子：若
+$$a_n= \begin{cases} 1,  n 偶数 \\ -1/n, n奇数 \end{cases} $$
+那么 $\limsup_{n\rightarrow \infty}a_n=1, \liminf_{n\rightarrow \infty}a_n=0. $ 
+
+注意：这两个都是序列的极限行为，一个是上限，一个是下限；这个上下限都跟序列任何前有限项无关，而必须是是往后无限次都会出现才行
+
+序列 $\{a_n\}$ 的极限 (limit)存在，当且仅当 $\limsup_{n\rightarrow \infty}a_n=\liminf_{n\rightarrow \infty}a_n$ ,且它们都不为无穷大
+
+我们可以拓展类似的定义到连续的情况：
+
+$\limsup_{y\rightarrow x}f(y) = \inf_{\delta > 0} \sup_{|y-x| < \delta}f(y) $
+
+上一节: 第一章、预备知识
+
+下一节: 1.2 数学分析中的基础定义及定理
 
 
