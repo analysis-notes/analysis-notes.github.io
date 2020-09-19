@@ -38,11 +38,11 @@
           appKey: '5zCsqkgRvdMn7CeHsy1wN81P'
         },
         plugins: [
-          // EditOnGithubPlugin.create(
-          //  "https://github.com/analysis-notes/analysis.github.io/issues/new",
-          //  null,
-          //  "📝Edit"
-          //),
+          EditOnGithubPlugin.create(
+            "https://github.com/analysis-notes/analysis.github.io/issues/new",
+            null,
+            "📝Edit"
+          ),
           function (hook) {
             hook.beforeEach(function (content) {
               return content.replace(/\$\$([\s\S]*?)\$\$/g,
@@ -69,7 +69,6 @@
         ]
       };
     </script>
-    <script src="//cdn.bootcss.com/mathjax/2.6.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
     <script src="//unpkg.com/docsify-valine/dist/docsify-valine.min.js"></script>
   </body>
