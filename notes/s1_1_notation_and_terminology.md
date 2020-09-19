@@ -48,7 +48,7 @@ $x \vee y = \max(x,y) , x\wedge y = \min(x,y) $
  $\liminf_{n\rightarrow \infty} a_n=\sup_n \inf _{m\ge n} a_m$
  
 举个例子：若
-$$a_n= \begin{cases} 1,  n 偶数 \\ -1/n, n奇数 \end{cases} $$
+$a_n= \begin{cases} 1,  n 偶数 \\ -1/n, n 奇数 \end{cases} $
 那么 $\limsup_{n\rightarrow \infty}a_n=1, \liminf_{n\rightarrow \infty}a_n=0. $ 
 
 注意：这两个都是序列的极限行为，一个是上限，一个是下限；这个上下限都跟序列任何前有限项无关，而必须是是往后无限次都会出现才行
