@@ -13,7 +13,7 @@ $A-B=A \cap B^C$
 
 $A\Delta B=(A-B) \cup (B-A)$，也叫对称差 (symmetric difference)
 
-令 $I$ 为非空指数集 (index set)， 集合系 $\{A_{\alpha}\}_{\alpha \in I}$ 称为不相交 (disjoint)，如果 $A_{\alpha} \cap A_{\beta} = \emptyset, \forall \alpha \ne \beta$ 
+令 $I$ 为非空指数集 (index set)， 集合系 $\{A_{\alpha}\}\_{\alpha \in I}$ 称为不相交 (disjoint)，如果 $A\_{\alpha} \cap A_{\beta} = \emptyset, \forall \alpha \ne \beta$ 
 
 把 $A_1 \subset A_2 \subset A_3 \ldots$  记作 $A_i \uparrow$ ；如果 $A_1 \subset A_2 \subset A_3 \ldots$，且 $A=\cup_{i=1}^\infty A_i$ ，则记为 $A_i \uparrow A$
 
@@ -48,7 +48,7 @@ $x \vee y = \max(x,y) , x\wedge y = \min(x,y) $
  $\liminf_{n\rightarrow \infty} a_n=\sup_n \inf _{m\ge n} a_m$
  
 举个例子：若
-$a_n= \begin{cases} 1,  n 偶数 \\ -1/n, n 奇数 \end{cases} $
+$a_n= \begin{cases} 1,  n 偶数 \\\\ -1/n, n 奇数 \end{cases} $
 那么 $\limsup_{n\rightarrow \infty}a_n=1, \liminf_{n\rightarrow \infty}a_n=0. $ 
 
 注意：这两个都是序列的极限行为，一个是上限，一个是下限；这个上下限都跟序列任何前有限项无关，而必须是是往后无限次都会出现才行
