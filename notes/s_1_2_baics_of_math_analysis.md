@@ -80,7 +80,7 @@ $ B(x,r)=\\{y \in X: d(x,y) < r\\} $ <br>
 **Definition 1.21** 集合 X 上有一个偏序关系 (partial order), 记作 "$\le$" ，如果满足：
 (1) $x \le x, \forall x \in X $ <br>
 (2) 若 $x \le y, y \le x $，那么$ x=y $ <br>
-> 注：对于偏序集上任意的 x,y ; x \le y 跟 y \le x 可以同时不成立。例：令 Y 是一个集合， X 是由 Y 的所有子集构成的集合；定义 A \le B \iff A, B \in X; A \subset B。有兴趣还可以了解一下: 全序 (total oder)跟良序 (well order)。 <br>
+> 注：对于偏序集上任意的 $x,y$ ; $x \le y$ 跟 $y \le x$ 可以同时不成立。例：令 $Y$ 是一个集合，$X$ 是由 $Y$ 的所有子集构成的集合；定义 $A \le B \iff A, B \in X$; $A \subset B$ <br>
 
 接下来罗列三个关于实数的结论 <br>
 
