@@ -69,30 +69,28 @@ $ B(x,r)=\\{y \in X: d(x,y) < r\\} $ <br>
 **Definition 1.21** 集合 X 上有一个偏序关系 (partial order), 记作 "$\le$" ，如果满足：
 (1) $x \le x, \forall x \in X $ <br>
 (2) 若 $x \le y, y \le x $，那么$ x=y $ <br>
-注：对于偏序集上任意的 x,y ; x \le y 跟 y \le x 可以同时不成立。例：令 Y 是一个集合， X 是由 Y 的所有子集构成的集合；定义 A \le B \iff A, B \in X; A \subset B。有兴趣还可以了解一下: 全序 (total oder)跟良序 (well order)。
+注：对于偏序集上任意的 x,y ; x \le y 跟 y \le x 可以同时不成立。例：令 Y 是一个集合， X 是由 Y 的所有子集构成的集合；定义 A \le B \iff A, B \in X; A \subset B。有兴趣还可以了解一下: 全序 (total oder)跟良序 (well order)。 <br>
 
-接下来罗列三个关于实数的结论
+接下来罗列三个关于实数的结论 <br>
 
 **Proposition 1.22** 任取闭集 $K \subset \mathbb R$, $K$ 是某个有限区间的子集，那么 $K$ 是紧致的 <br>
-注：我们后面会讲到，对一般的拓扑空间，紧集的闭子集都是紧致的。反过来：若 $K \in \mathbb R$ 是紧致的，那么 $K$ 是一个闭集。注：这个结论对于 Hausdorff 拓扑空间也成立。
-
+注：我们后面会讲到，对一般的拓扑空间，紧集的闭子集都是紧致的。反过来：若 $K \in \mathbb R$ 是紧致的，那么 $K$ 是一个闭集。注：这个结论对于 Hausdorff 拓扑空间也成立。 <br>
 证：略。
 
-**Proposition 1.23** 任取开集 $G \subset \mathbb R$, 那么 $G$ 可以被写成可数个 (countable) 开区间的无交并
-
+**Proposition 1.23** 任取开集 $G \subset \mathbb R$, 那么 $G$ 可以被写成可数个 (countable) 开区间的无交并 <br>
 证：略。注：这个是 Lindelof 引理在 $\mathbb R$ 上的应用。有兴趣的同学可以去查一下：Lindeof 性质指的是集合 A 的任意一个开覆盖都有一个可数子覆盖 (countable subcover)；这个跟紧致集的定义很类似。度量空间 X 拥有Lindelof 性质，当且仅当 $X$ 是可分的 (separable)
 
-**Proposition 1.24** 令 $f: \mathbb R \mapsto \mathbb R$ 是增函数，那么 $\lim_{y\rightarrow x^+}f(y),\lim_{y \rightarrow x^-}f(y)$ 在每一点 $x$ 处都存在；并且 $f$ 不连续出的点集是可数的
+**Proposition 1.24** 令 $f: \mathbb R \mapsto \mathbb R$ 是增函数，那么 $\lim_{y\rightarrow x^+}f(y),\lim_{y \rightarrow x^-}f(y)$ 在每一点 $x$ 处都存在；并且 $f$ 不连续出的点集是可数的 <br>
 证： 见 14.5 节 Lemma 14.32 (1) 的证明。
 
 最后，写一个Stone-Weierstrass定理应用于度量空间的结论。这个略有提前，Stone-Weierstrass定理会在拓扑章节详细证明，但是在此之前就会用到它（讲傅立叶变换的时候），所以这边先写一下，也暂时不证了。
-**Theorem 1.25** 令 $X$ 是一个紧致的度量空间, $\mathcal A$ 是一个由 $X$ 上连续复值函数组成的集合，并且有以下性质：
-(1) 若 $f,g \in \mathcal A$，且 $c \in \mathbb C$，那么 $f+g, fg, cf \in \mathcal A$
-(2) 若 $f \in \mathcal A$，那么 $\bar f \in \mathcal A$ 
-(3) $\forall x \in X, \,\exists f \in \mathcal A, \, st f(x) \ne 0$ 注：我们也称 $\mathcal A$ 在所有 $X$ 的点上都不消失 (vanish at no point of $X$ )
-(4) $\forall x\ne y \in X, \, \exists \, f\in \mathcal A, s.t. f(x) \ne f(y)$ 注：我们也称 $\mathcal A$ 可把点分开 (separate points)
+**Theorem 1.25** 令 $X$ 是一个紧致的度量空间, $\mathcal A$ 是一个由 $X$ 上连续复值函数组成的集合，并且有以下性质： <br>
+(1) 若 $f,g \in \mathcal A$，且 $c \in \mathbb C$，那么 $f+g, fg, cf \in \mathcal A$ <br>
+(2) 若 $f \in \mathcal A$，那么 $\bar f \in \mathcal A$  <br>
+(3) $\forall x \in X, \,\exists f \in \mathcal A, \, st f(x) \ne 0$ 注：我们也称 $\mathcal A$ 在所有 $X$ 的点上都不消失 (vanish at no point of $X$ ) <br>
+(4) $\forall x\ne y \in X, \, \exists \, f\in \mathcal A, s.t. f(x) \ne f(y)$ 注：我们也称 $\mathcal A$ 可把点分开 (separate points) <br>
 那么， $\mathcal A$ 对映于上确界范数 (supremum norm, 即：$||f||:=\sup_{x \in X}|f(x)|$)的闭 (closure) $\overline {\mathcal A}$ 是 X 上所有连续复值函数组成的集合。用数学语言描述这个结论，就是：对于所有 $X$ 上的连续复值函数 $f$ , 以下结论都成立：<br>
-$\forall \varepsilon >0, ~\exists ~g \in \mathcal A ,\, s.t. \, \sup_{x \in X}|f(x)-g(x)| < \varepsilon $
+$\forall \varepsilon >0, ~\exists ~g \in \mathcal A ,\, s.t. \, \sup_{x \in X}|f(x)-g(x)| < \varepsilon $ <br>
 
 证：略, 后面讲到拓扑的时候会详细证明一个更一般的结论
 上一节: 1.1 一些数学的符号跟定义
