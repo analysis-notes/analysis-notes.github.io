@@ -41,7 +41,7 @@
           // EditOnGithubPlugin.create(
           //  "https://github.com/analysis-notes/analysis.github.io/issues/new",
           //  null,
-          //  "📝评论"
+          //  "📝Edit"
           //),
           function (hook) {
             hook.beforeEach(function (content) {
@@ -68,18 +68,6 @@
           }
         ]
       };
-    </script>
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        extensions: ["tex2jax.js"],
-        jax: ["input/TeX", "output/HTML-CSS"],
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-          processEscapes: true
-        },
-        "HTML-CSS": { availableFonts: ["TeX"] }
-      });
     </script>
     <script src="//cdn.bootcss.com/mathjax/2.6.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
