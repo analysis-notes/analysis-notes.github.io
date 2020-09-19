@@ -43,12 +43,12 @@
               return content.replace(/\$\$([\s\S]*?)\$\$/g,
                function(x){ return x.replace(/[_]/g,'[subscript]')}
               )
-            })
+            }),
             hook.beforeEach(function (content) {
               return content.replace(/\$([\s\S]*?)\$/g,
                function(x){ return x.replace('_','[subscript]')}
               )
-            })
+            }),
             hook.afterEach(function(html, next) {
               html = html.replace(/\$\$([\s\S]*?)\$\$/g,
                function(x){ return x.replace(/(\[subscript\])/g,'_') }
