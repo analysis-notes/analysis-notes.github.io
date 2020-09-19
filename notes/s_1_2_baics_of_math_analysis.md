@@ -6,28 +6,39 @@
 (1) $d(x,y)=d(y,x), \forall x,y \in X$ <br>
 (2) $d(x,y) \ge0, \forall x, y \in X; d(x,y)=0 \iff x = y $ <br> 
 (3) $d(x,z) \le d(x,y) + d(y,z), \forall x, y, z \in X $ <br>
+
 **Definition 1.2** 半径为 r 中心为 x 的开球 (open ball) 定义：(X,d) 为一度量空间 <br>
 $ B(x,r)=\\{y \in X: d(x,y) < r\\} $ <br>
 
 **Definition 1.3** 令 A $\subset X$，定义 $A$ 的内点 (interior point)， 记作 $A^o$ 是由这样的点 $x$ 构成：$\exists r_x > 0, s.t. B(x, r_x) \subset A$ ，即点 $x$ 处能找到一个完全包含在 $A$ 内的开球 <br>
+
 **Definition 1.4** $A$ 的闭集 (closure)，记作 $\overline A$ 是由所有满足一下条件的点 $x$ 构成： <br>
 每一个以点 $x$ 为中心的开球都至少包含一个点在集合 $A$ 里面 <br>
+
 **Definition 1.5** 定义集合 $A$ 为开集 (open)，如果 $A=A^o$；集合 $A$ 为闭集 (closed)， 如果 $A=\overline A$  <br>
+
 **Definition 1.6** 令 $f:X \mapsto \mathbb R$ ，$f$ 的支撑 (support) 被定义为 $\overline {\{x: f(x) \ne 0\}}$ <br>
+
 **Definition 1.7** 称 $f: \mathbb R \mapsto \mathbb R$ 在 $x$ 处连续 (continuous)，若 $\forall \epsilon > 0, \exists \delta >0; s.t. \forall d(x,y) < \delta, |f(x) - f(y)| < \epsilon$  <br>
 称 $f$ 是连续函数，如果 $f$ 在其定义域内每一点连续 <br>
 一个关于连续的性质：开集的 $f$ 逆也是一个开集 <br>
 注：我们后面会看到这一性质把连续映射的定义推广到了更一般的拓扑空间 <br>
+
 **Definition 1.8** 称 $f:\mathbb R \mapsto \mathbb R$ 在点 $x$ 处上半连续 (upper semicontinuous), 当且仅当 $f(x) \ge \limsup_{y \to x}f(y)$; 称其在点 $x$ 处下半连续 (lower semicontinuous), 当且仅当 $f(x) \le \liminf_{y \to x}f(y)$；称其是上半/下半连续的，当且仅当其在定义域中每一点都是上半/下半连续的；称其是半连续的 (semicontinuous), 当且仅当在定义域内几乎处处连续，且在不连续点处为上半连续或下半连续的 <br>
 注：半连续是比连续更弱的一个概念。直觉上理解，半连续是指函数在点 $x$ 附近的值没有比 $f(x)$ 高出太多或低出太多；上/下半连续要么是连续的，要么是往上/下跳跃 <br>
 注：一个函数是连续的，当且仅当它既是上半连续又是下半连续的。
 注：函数 $f$ 上半连续，当且仅当任取 $y \in \mathbb R$ ，集合 $\\{x \in X:f(x) > y\\}$ 是开集；函数 $f$ 下半连续，当且仅当任取 $y \in \mathbb R$，集合 $\\{x \in X:f(x) \le y\\}$ 是集 <br>
 注：这个概念可以跟右连续 ( $f(x)=f(x^+)$ ) 跟 左连续 ( $f(x)=f(x^-)$ )对比着看，是不同角度的考量：定义域 vs. 值域。 <br>
+
 **Definition 1.9** 称一个序列 $\\{x_n\\} \subset X$ 收敛 (converge) 到一个点 $x \in X$，当且仅当 $\forall \epsilon > 0, \exists N \in \mathbb N; s.t. \forall n \ge N, d(x_n,x) < \epsilon$ <br>
+
 **Definition 1.10** 称一个序列被称为柯西序列 (Cauchy Sequence)，当且仅当 $\forall \epsilon > 0, \exists N \in \mathbb N; s.t. \forall m, n \ge N, d(x_m, x_n) < \epsilon $ <br>
 注：从上面的定义看，柯西序列比收敛序列弱一点；即柯西序列不一定收敛（可能会收敛到 $X$ 的外面去），但收敛序列一定是柯西序列 <br>
+
 **Definition 1.11** 若空间 $X$ 中的每一条柯西序列都收敛到 $X$ 中的一点，那么称 $X$ 为完备的 (complete) <br>
+
 **Definition 1.12** 令 $K \subset X$, 定义 $K$ 的开覆盖 (open cover) 为一个非空集合 (collection of sets) $\{G_{\alpha}\}_{\alpha \in I} \, s.t. \,K \subset \cup_{\alpha \in I}G_{\alpha}$ ，所有的 $G_{\alpha}$ 均为开集 <br>
+
 **Definition 1.13** 称集合 $K$ 为紧致的/紧集 (compact)，若它的每一个开覆盖都存在一个有限子覆盖，即 $\forall \{G_\alpha\}_{\alpha \in I}, \exists \, G_1, \ldots, G_n \in \{G_\alpha\}_{\alpha \in I}, s.t. K \subset \cup_{i=1}^nG_i$ 。注意，这边需要对任意一个开覆盖都成立才行。 <br>
 下面给出两个关于紧集的结论：<br>
 
