@@ -38,11 +38,6 @@
           appKey: '5zCsqkgRvdMn7CeHsy1wN81P'
         },
         plugins: [
-          EditOnGithubPlugin.create(
-            "https://github.com/analysis-notes/analysis.github.io/issues/new",
-            null,
-            "📝Edit"
-          ),
           function (hook) {
             hook.beforeEach(function (content) {
               return content.replace(/\$\$([\s\S]*?)\$\$/g,
