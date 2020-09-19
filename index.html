@@ -45,18 +45,25 @@
           //),
           function (hook) {
             hook.beforeEach(function (content) {
-              return content.replace(/\$\$([\s\S]*?)\$\$/g, function (m, code) {
-                MathJax.Hub.Queue(["Typeset",MathJax.Hub])
-                return code
-              })
+              return content.replace(/\$\$([\s\S]*?)\$\$/g,
+               function(x){ return x.replace(/[_]/g,'[subscript]')}
+              )
             })
-          },
-          function (hook) {
-            hook.doneEach(function () {
-              // 每次路由切换时数据全部加载完成后调用，没有参数。
-              if (typeof MathJax !== 'undefined') {
-                MathJax.Hub.Queue(["Typeset", MathJax.Hub])
-              }
+            hook.beforeEach(function (content) {
+              return content.replace(/\$([\s\S]*?)\$/g,
+               function(x){ return x.replace('_','[subscript]')}
+              )
+            })
+            hook.afterEach(function(html, next) {
+              html = html.replace(/\$\$([\s\S]*?)\$\$/g,
+               function(x){ return x.replace(/(\[subscript\])/g,'_') }
+              )
+              html = html.replace(/\$([\s\S]*?)\$/g,
+               function(x){ return x.replace(/(\[subscript\])/g,'_')}
+              )
+              MathJax.Hub.Queue( ["Typeset",MathJax.Hub] ) // calling it twice
+              MathJax.Hub.Queue( ["Typeset",MathJax.Hub] ) //fixes MathJax refresh issue
+              next(html)
             })
           }
         ]
