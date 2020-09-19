@@ -1,0 +1,9 @@
+[linterator]
+limit_to_changes = true
+no_comments = true
+
+[tools]
+linters = mdl
+
+[tool_mdl]
+config = ./.markdownlint.yaml
