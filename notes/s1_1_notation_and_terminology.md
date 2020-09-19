@@ -1,11 +1,15 @@
-分析常用的几个符号
+# 分析常用的几个符号
 
-$\forall$ 表示：“任取”，“对所有” <br>
-$\exists$ 表示：“存在(至少一个)“ <br>
-$s.t. (\text{such that})$ 表示：“导致，以至于，满足，使得” <br>
-$\iff$ 表示：“定义，等价，一回事儿” <br>
+$\forall$ 表示：“任取”，“对所有”
 
-一些集合论的基本符号跟定义
+$\exists$ 表示：“存在(至少一个)“
+
+$s.t. (\text{such that})$ 表示：“导致，以至于，满足，使得”
+
+$\iff$ 表示：“定义，等价，一回事儿”
+
+
+# 一些集合论的基本符号跟定义
 
 $A^C=\{x \in X: x\notin A\}$
 
@@ -13,7 +17,7 @@ $A-B=A \cap B^C$
 
 $A\Delta B=(A-B) \cup (B-A)$，也叫对称差 (symmetric difference)
 
-一些定义
+# 罗列一些定义
 
 令 $I$ 为非空指数集 (index set)， 集合系 $\{A_{\alpha}\}\_{\alpha \in I}$ 称为不相交 (disjoint)，如果 $A\_{\alpha} \cap A_{\beta} = \emptyset, \forall \alpha \ne \beta$ 
 
@@ -50,7 +54,7 @@ $x \vee y = \max(x,y) , x\wedge y = \min(x,y) $
  $\liminf_{n\rightarrow \infty} a_n=\sup_n \inf _{m\ge n} a_m$
  
 举个例子：若
-￥$a_n= \begin{cases} 1,  n 偶数 \\\\ -1/n, n 奇数 \end{cases} $$
+$$a_n= \begin{cases} 1,  n 偶数 \\\\ -1/n, n 奇数 \end{cases} $$
 那么 $\limsup_{n\rightarrow \infty}a_n=1, \liminf_{n\rightarrow \infty}a_n=0. $ 
 
 注意：这两个都是序列的极限行为，一个是上限，一个是下限；这个上下限都跟序列任何前有限项无关，而必须是是往后无限次都会出现才行
