@@ -37,9 +37,9 @@ $ B(x,r)=\\{y \in X: d(x,y) < r\\} $ <br>
 
 **Definition 1.11** 若空间 $X$ 中的每一条柯西序列都收敛到 $X$ 中的一点，那么称 $X$ 为完备的 (complete) <br>
 
-**Definition 1.12** 令 $K \subset X$, 定义 $K$ 的开覆盖 (open cover) 为一个非空集合 (collection of sets) $\{G_{\alpha}\}_{\alpha \in I} \, s.t. \,K \subset \cup_{\alpha \in I}G_{\alpha}$ ，所有的 $G_{\alpha}$ 均为开集 <br>
+**Definition 1.12** 令 $K \subset X$, 定义 $K$ 的开覆盖 (open cover) 为一个非空集合 (collection of sets) $\\{G_{\alpha}\\}\_{\alpha \in I} \, s.t. \,K \subset \cup_{\alpha \in I}G_{\alpha}$ ，所有的 $G_{\alpha}$ 均为开集 <br>
 
-**Definition 1.13** 称集合 $K$ 为紧致的/紧集 (compact)，若它的每一个开覆盖都存在一个有限子覆盖，即 $\forall \{G_\alpha\}_{\alpha \in I}, \exists \, G_1, \ldots, G_n \in \{G_\alpha\}_{\alpha \in I}, s.t. K \subset \cup_{i=1}^nG_i$ 。注意，这边需要对任意一个开覆盖都成立才行。 <br>
+**Definition 1.13** 称集合 $K$ 为紧致的/紧集 (compact)，若它的每一个开覆盖都存在一个有限子覆盖，即 $\forall \{G_\alpha\}_{\alpha \in I}, \exists \, G_1, \ldots, G_n \in \\{G_\alpha\\}\_{\alpha \in I}, s.t. K \subset \cup_{i=1}^nG_i$ 。注意，这边需要对任意一个开覆盖都成立才行。 <br>
 下面给出两个关于紧集的结论：<br>
 
 **Proposition 1.14** 若集合 $K$ 紧致, $F \subset K$ 为闭集，那么 $F$ 也是紧致
