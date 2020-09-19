@@ -19,7 +19,7 @@ $A\Delta B=(A-B) \cup (B-A)$，也叫对称差 (symmetric difference)
 
 罗列一些定义
 
-令 $I$ 为非空指数集 (index set)， 集合系 $\{A_{\alpha}\}\_{\alpha \in I}$ 称为不相交 (disjoint)，如果 $A_{\alpha} \cap A_{\beta} = \emptyset, \forall \alpha \ne \beta$ 
+令 $I$ 为非空指数集 (index set)， 集合系 $\{A_{\alpha}\}_{\alpha \in I}$ 称为不相交 (disjoint)，如果 $A_{\alpha} \cap A_{\beta} = \emptyset, \forall \alpha \ne \beta$ 
 
 把 $A_1 \subset A_2 \subset A_3 \ldots$  记作 $A_i \uparrow$ ；如果 $A_1 \subset A_2 \subset A_3 \ldots$，且 $A=\cup_{i=1}^\infty A_i$ ，则记为 $A_i \uparrow A$
 
