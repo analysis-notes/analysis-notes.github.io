@@ -1,0 +1,50 @@
+<!-- index.html -->
+
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="//unpkg.com/katex/dist/katex.min.css" />
+    <link rel="stylesheet" href="//unpkg.com/docsify/themes/vue.css" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="//unpkg.com/katex/dist/katex.min.js"></script>
+    <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+    <script src="//unpkg.com/docsify-edit-on-github/index.js"></script>
+    <script>
+      window.$docsify = {
+        homepage: "introduction.md",
+        loadSidebar: true,
+        subMaxLevel: 2,
+        name: "实复分析讲义",
+        noCompileLinks: ["/pages/.*"],
+        plugins: [
+          EditOnGithubPlugin.create(
+            "https://github.com/analysis-notes/analysis.github.io/issues/new",
+            null,
+            "📝评论"
+          ),
+          hook => hook.afterEach(content => {
+            const doc = new DOMParser().parseFromString(content, 'text/html')
+            Array.from(doc.querySelectorAll('p'))
+              .forEach(x => x.innerHTML = x.innerHTML.replace(/\$\$?([\s\S]*?)\$\$?/g, (all, code) => {
+                const startsWith = all.startsWith('$$')
+                const endsWith = all.endsWith('$$')
+                // single '$' at beginning and end: small
+                // double $$ at beginning and end: large 
+                if((startsWith && endsWith) || (!startsWith && !endsWith)) {
+                  return katex.renderToString(code, {displayMode: startsWith})
+                } else {
+                  console.warn('Error: mismatching dollar signs ($) in math expression, ignoring math expression')
+                  return all
+                }
+              }))
+            return doc.body.innerHTML
+          })
+        ]
+      };
+    </script>
+  </body>
+</html>
